@@ -40,6 +40,7 @@ ADD CELL / ADD ECELL / ADD UCELL    ← 2G / LTE / UMTS cell creation
 ADD NR: SRC=<cell>, DST=<neighbor>  ← neighbor relation for mobility
 ACT CELL / DEA CELL                 ← traffic-affecting activation
 ```
+
 Neighbor relations are the mobility backbone: a missing relation silently degrades handover success (see the KPI reference) without any alarm — this is where proactive KPI analysis beats reactive alarms.
 
 ### Transport / IP

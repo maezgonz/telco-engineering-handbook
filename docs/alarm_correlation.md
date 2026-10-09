@@ -33,6 +33,7 @@ A single physical fault can raise dozens of downstream alarms. The skill is read
 Transport link down  ──▶  BBU/Node unreachable  ──▶  all cells down  ──▶  HO failures on neighbors
      (ROOT CAUSE)              (symptom)                (symptom)            (symptom)
 ```
+
 **Rule**: fix the root, the cascade clears itself. Acting on symptoms (restarting units) masks the fault and burns MTTR.
 
 ### Time-based correlation
