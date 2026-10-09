@@ -1,0 +1,45 @@
+site_name: Telco Engineering Handbook
+site_description: Carrier-grade telecom engineering knowledge base - 3GPP KPIs, alarm correlation, stress testing, EMF analysis, MML reference and network evolution
+site_url: https://maezgonz.github.io/telco-engineering-handbook
+repo_url: https://github.com/maezgonz/telco-engineering-handbook
+repo_name: maezgonz/telco-engineering-handbook
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Quality & KPIs:
+      - RAN KPI Reference: docs/ran_kpi_reference.md
+  - Operations & reliability:
+      - Alarm Correlation: docs/alarm_correlation.md
+      - Stress Testing & Redundancy: docs/ran_stress_testing.md
+  - Configuration & spectrum:
+      - MML Command Reference: docs/mml_command_reference.md
+      - Spectrum Refarming: docs/spectrum_refarming.md
+  - Architecture & regulation:
+      - Core Network Evolution: docs/core_network_evolution.md
+      - RNI/EMF Analysis: docs/rni_emf_reference.md
+  - About:
+      - Confidentiality: docs/confidentiality.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight
