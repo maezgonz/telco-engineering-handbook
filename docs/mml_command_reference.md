@@ -1,4 +1,4 @@
-# MML-Style Command Reference — Generic Patterns per Domain
+﻿# MML-Style Command Reference — Generic Patterns per Domain
 
 > Generic command patterns for MML-style (Man-Machine Language) configuration management across RAN and core domains. Distilled from years of hands-on configuration work with vendor LMT/OSS tools. All syntax is generic — vendor manuals define the exact proprietary syntax per release.
 
@@ -34,6 +34,7 @@ A change without a captured before/after pair is unverifiable — and unverifiab
 ## Patterns per domain
 
 ### RAN — cells and neighbor relations
+
 ```text
 ADD CELL / ADD ECELL / ADD UCELL    ← 2G / LTE / UMTS cell creation
 ADD NR: SRC=<cell>, DST=<neighbor>  ← neighbor relation for mobility
@@ -42,19 +43,23 @@ ACT CELL / DEA CELL                 ← traffic-affecting activation
 Neighbor relations are the mobility backbone: a missing relation silently degrades handover success (see the KPI reference) without any alarm — this is where proactive KPI analysis beats reactive alarms.
 
 ### Transport / IP
+
 ```text
 ADD IPINTERFACE: IPADDR=..., MASK=..., VLAN=...
 ADD OAMROUTE: DSTIP=..., NEXTHOP=...
 DSP ETHPORT: IFIDX=...              ← link state, errors
 ```
+
 Transport faults cascade into full cell-down storms — the transport layer is the most common root cause in alarm correlation.
 
 ### Core (Circuit/Packet/IMS)
+
 ```text
 LST HLR / LST HSS                   ← subscriber data integrity checks
 ADD MGW / SET MGW: ...              ← media gateway configuration
 ACT <unit>                          ← bring core network elements into service
 ```
+
 Core changes carry the widest blast radius — subscriber-affecting from day one; every core MOP needs a rollback plan and a maintenance window.
 
 ## Configuration management workflow

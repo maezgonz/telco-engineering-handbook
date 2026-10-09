@@ -1,4 +1,4 @@
-# Core Network Evolution — 2G/3G → IMS/VoLTE → 5G SBA
+﻿# Core Network Evolution — 2G/3G → IMS/VoLTE → 5G SBA
 
 > Anonymized architecture reference on core network evolution, distilled from hands-on core engineering across three generations of mobile systems. No operator or vendor data — the architecture is 3GPP standard.
 

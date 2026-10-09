@@ -18,16 +18,19 @@ Validate that a RAN controller platform (BSC/RNC/eNodeB controller or their succ
 ## 2. The methodology
 
 ### Phase 1 — Baseline capture
+
 - Record controller state: CPU/memory/load per unit, board states, transport throughput
 - Record KPI baseline: accessibility, retainability, drop rates (24h window)
 - Record alarm state (clean, unrelated alarms ticketed)
 
 ### Phase 2 — Load generation
+
 - Generate traffic at and beyond expected peak (1× → 1.5× → stress levels)
 - Monitor: throughput, CPU, latency, error rates
 - **Pass criteria**: service holds with expected degradation curve — no cliff
 
 ### Phase 3 — Failure injection (the critical phase)
+
 - Inject redundancy events: pull the active unit, kill processes, saturate transport
 - Measure during EVERY injection:
   - **Failover time**: active → standby switchover duration
@@ -36,11 +39,13 @@ Validate that a RAN controller platform (BSC/RNC/eNodeB controller or their succ
 - **Pass criteria**: switchover within vendor spec, drop spike within tolerance, no stuck sessions
 
 ### Phase 4 — Post-test validation
+
 - KPIs return to baseline within tolerance
 - No new critical/major alarms
 - Controller state clean (no leaked sessions, no failed processes)
 
 ### Phase 5 — Report & sign-off
+
 - Results table per test type with measured values vs. pass criteria
 - Findings classified: blocking / non-blocking (with workaround) / advisory
 - Sign-off by implementer, reviewer and operator acceptance — see `examples/atp_template.md`

@@ -1,4 +1,4 @@
-# Spectrum Refarming — Methodology
+﻿# Spectrum Refarming — Methodology
 
 > Anonymized methodology write-up from spectrum refarming campaigns in multi-technology mobile networks (GSM/UMTS/LTE coexistence). No operator or vendor data — the workflow is industry practice.
 

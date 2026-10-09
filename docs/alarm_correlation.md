@@ -28,6 +28,7 @@ raised ──▶ acknowledged ──▶ (diagnosis + action) ──▶ cleared
 A single physical fault can raise dozens of downstream alarms. The skill is reading the storm top-down:
 
 ### Dependency cascade (the most common pattern)
+
 ```text
 Transport link down  ──▶  BBU/Node unreachable  ──▶  all cells down  ──▶  HO failures on neighbors
      (ROOT CAUSE)              (symptom)                (symptom)            (symptom)
@@ -35,15 +36,18 @@ Transport link down  ──▶  BBU/Node unreachable  ──▶  all cells down 
 **Rule**: fix the root, the cascade clears itself. Acting on symptoms (restarting units) masks the fault and burns MTTR.
 
 ### Time-based correlation
+
 - Alarms raised within the same second/minute window share a probable cause
 - A storm starting right after a change → suspect the change (that is why MOPs require pre/post alarm captures)
 
 ### Topological correlation
+
 - Alarms across all cells on one subrack → hardware/power at that subrack
 - Alarms on cells sharing one transport route → transport fault
 - Alarms on one frequency band only → RF/interference issue (interference, not hardware)
 
 ### KPI-based confirmation
+
 - Correlate the alarm window with KPI degradation: a real fault shows in accessibility/retainability
 - Alarm storms WITHOUT KPI impact often point to faulty sensors or marginal (not service-affecting) conditions
 

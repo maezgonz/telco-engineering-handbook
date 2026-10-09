@@ -1,4 +1,4 @@
-# Non-Ionizing Radiation (RNI/EMF) Analysis — Reference
+﻿# Non-Ionizing Radiation (RNI/EMF) Analysis — Reference
 
 > Reference for electromagnetic-field immission/emission analysis around radio infrastructure, following ICNIRP guidelines (public international standard) and regulatory measurement practice. Distilled from measurement-engineering work producing regulator-facing certified reports.
 
