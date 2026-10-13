@@ -1,5 +1,7 @@
 # Telco Engineering Handbook
 
+![Telco Engineering Handbook - live MkDocs site](docs/img/site_home.png)
+
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Docs](https://img.shields.io/badge/Docs-7%20references-informational)
 
