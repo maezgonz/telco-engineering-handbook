@@ -25,18 +25,18 @@ theme:
 nav:
   - Home: index.md
   - Quality & KPIs:
-      - RAN KPI Reference: docs/ran_kpi_reference.md
+      - RAN KPI Reference: ran_kpi_reference.md
   - Operations & reliability:
-      - Alarm Correlation: docs/alarm_correlation.md
-      - Stress Testing & Redundancy: docs/ran_stress_testing.md
+      - Alarm Correlation: alarm_correlation.md
+      - Stress Testing & Redundancy: ran_stress_testing.md
   - Configuration & spectrum:
-      - MML Command Reference: docs/mml_command_reference.md
-      - Spectrum Refarming: docs/spectrum_refarming.md
+      - MML Command Reference: mml_command_reference.md
+      - Spectrum Refarming: spectrum_refarming.md
   - Architecture & regulation:
-      - Core Network Evolution: docs/core_network_evolution.md
-      - RNI/EMF Analysis: docs/rni_emf_reference.md
+      - Core Network Evolution: core_network_evolution.md
+      - RNI/EMF Analysis: rni_emf_reference.md
   - About:
-      - Confidentiality: docs/confidentiality.md
+      - Confidentiality: confidentiality.md
 
 markdown_extensions:
   - tables
